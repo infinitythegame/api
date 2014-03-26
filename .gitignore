@@ -41,5 +41,5 @@ Icon*
 *.vagrant
 *.modman
 .DS_Store
-bin/*
-vendor/*
+bin/
+vendor/
