@@ -1,0 +1,39 @@
+{
+    "name": "infinitythegame/api",
+    "type": "library",
+    "description": "API for Infinity army builder and calculator",
+    "keywords": ["infinity", "tabletop wargaming", "wargaming"],
+    "homepage": "https://github.com/infinitythegame/api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shrikeh",
+            "email": "barney@shrikeh.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "shrikeh/teapot": "dev-master",
+        "tabletop-wargaming/value-objects": "dev-master"
+    },
+    "require-dev" : {
+        "behat/behat": "v3.0.0rc3",
+        "phpspec/phpspec": "2.0.*@dev",
+        "phploc/phploc": ">=1.7.4",
+        "pdepend/pdepend": ">=1.1",
+        "sebastian/phpcpd": "2.0.*@dev",
+        "mayflower/php-codebrowser": "~1.1",
+        "phpmd/phpmd" : ">=1.4",
+        "squizlabs/php_codesniffer": "1.*",
+        "phpdocumentor/phpdocumentor": "2.*"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
