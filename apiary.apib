@@ -1,0 +1,32 @@
+FORMAT: 1A
+HOST: https://api.infinitythegame.shrikeh.net/
+
+# infinitythegame
+
+API for the army builder.
+
+## Units Collection [/units]
+
+### List All Units [GET]
+
++ Response 200 (application/json)
+
+    + Headers
+    
+    + Body
+    
+            {
+                "_links": {
+                    "self": { "href": "/orders" },
+                    "curies": [{ "name": "units", "href": "http://example.com/docs/rels/{rel}", "templated": true }],
+                    "units:ghulam": {
+                        "href": "/units/ghulam",
+                        "title: "Ghulam"
+                    },
+                    "units:hafza": {
+                        "href": "/units/hafza",
+                        "title: "Hafza"
+                    }
+                }
+            }
+
