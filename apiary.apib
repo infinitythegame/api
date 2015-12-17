@@ -15,7 +15,7 @@ API for the army builder.
     
             {
                 "_links": {
-                    "self": { "href": "/orders" },
+                    "self": { "href": "/units" },
                     "curies": [{ "name": "units", "href": "http://example.com/docs/rels/{rel}", "templated": true }],
                     "units:ghulam": {
                         "href": "/units/ghulam",
@@ -28,3 +28,34 @@ API for the army builder.
                 }
             }
 
+
+## Factions Collection [/factions]
+
+### List All Factions [GET]
+
++ Response 200 (application/hal+json)
+
+    + Body
+    
+            {
+                "_links": {
+                    "self": { "href": "/orders" },
+                    "curies": [{ "name": "factions", "href": "http://example.com/docs/rels/{rel}", "templated": true }],
+                    "factions:aleph": {
+                        "href": "/factions/aleph",
+                        "title: "Aleph"
+                    },
+                    "factions:ariadna": {
+                        "href": "/factions/ariadna",
+                        "title: "Ariadna"
+                    },
+                    "factions:haqqislam": {
+                        "href": "/factions/haqqislam",
+                        "title: "Haqqislam"
+                    },
+                    "factions:haqqislam": {
+                        "href": "/factions/nomads",
+                        "title: "Nomads"
+                    }
+                }
+            }
